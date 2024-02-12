@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+td,
+th,
+li {
+    font-family: 'Playfair Display', serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Start Nav */
+
+.navbar-nav .nav-link.active {
+    color: #AD9551;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #AD9551;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: #AD9551;
+    border-width: 2px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* End Nav */
+
+
+
+/* Start Imaga Covar */
+.cavar {
+    width: 100%;
+    height: 100vh;
+    padding-left: 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../images/bac.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.cavar h3 {
+    color: white;
+    text-align: center;
+}
+
+.cavar .university:hover {
+    background-color: #AD9551;
+    color: #fff;
+
+}
+
+.icon {
+    width: 15%;
+    margin: 0;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Ene Imaga Covar */
+
+@media screen and (max-width: 765px) {
+
+    .cavar {
+        width: 100%;
+        height: 70vh;
+        padding-left: 5%;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../images/baaa.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        width: 20%;
+        font-size: 12px;
+    }
+
+    .icon i {
+        margin: 0 8px;
+    }
+
+    .MyInfo {
+        margin: 200px 30px;
+    }
+
+    .MyInfo .info {
+        padding: 20px;
+    }
+
+    .MyInfo .photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .MyInfo h2,
+    li {
+        font-size: calc(.7rem + .5vw);
+        line-height: 2;
+        font-weight: bold;
+    }
+
+    .myskills {
+        font-size: x-small;
+
+    }
+
+    .footer {
+        font-size: smaller;
+        padding: 25px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 501px) {
+
+    .icon {
+        width: 20%;
+        font-size: 12px;
+    }
+
+    .icon i {
+        margin: 0 8px;
+    }
+
+    .MyInfo .photo {
+        width: 260px;
+        height: 260px;
+
+    }
+
+    .MyInfo h2,
+    li {
+        font-size: calc(.6rem + .5vw);
+        line-height: 2;
+        font-weight: bold;
+    }
+
+    .myskills {
+        font-size: x-small;
+
+    }
+
+    .footer {
+        font-size: small;
+        padding: 20px;
+    }
+
+
+}
+
+
+
+
+/* Start MyInfo */
+.MyInfo {
+    margin: 300px 60px;
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(229, 227, 231, 0.6);
+    box-shadow: 10px 10px 20px -12px #AD9551;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.MyInfo h2 {
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(60);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.MyInfo #info {
+    list-style: none;
+}
+
+.MyInfo li,
+h2 {
+    color: #887542;
+    line-height: 2;
+}
+
+.MyInfo .info {
+    padding: 50px;
+}
+
+.MyInfo .info span {
+    font-weight: bolder;
+}
+
+.MyInfo .photo {
+    padding: 3px;
+
+}
+
+
+#user::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/user.svg) no-repeat;
+}
+
+#date::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/date.svg) no-repeat;
+}
+
+#place::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/house.svg) no-repeat;
+}
+
+#address::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/location.svg) no-repeat;
+}
+
+#Gender::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/mars.svg) no-repeat;
+}
+
+#Marital_Status::before {
+    content: "";
+    display: inline-block;
+    margin-right: 9px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url(../images/person.svg) no-repeat;
+}
+
+
+/* End MyInfo */
+
+/* Start My Skills */
+
+
+.myskills {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+
+}
+
+.title {
+    background-color: #dfdfde;
+
+}
+
+table {
+    width: 80%;
+    height: 100vh;
+    border: none;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    border-collapse: separate;
+    text-align: center;
+    border-radius: 10px;
+}
+
+td {
+    border: 1px solid #dfdfde;
+}
+
+th {
+    color: #fff;
+    font-weight: 1000;
+    background-color: #AD9551;
+}
+
+
+.myskills .odd {
+    background-color: rgba(229, 227, 231, 0.6);
+}
+
+.myskills .even {
+    background-color: #fff;
+}
+
+/* End My Skills */
+
+
+.contain {
+    margin: 100px auto;
+    max-width: 960px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill {
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+}
+
+.progressLevel {
+    height: 20px;
+}
+
+.progress-bar {
+    line-height: 20px;
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+
+
+
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px;
+    background-color: rgb(229, 227, 231);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 2px 4px 3px black;
+}
+
+.footer {
+    background-color: #AD9551;
+    padding: 50px 0px 0 0;
+    color: #fff;
+    height: 35vh;
+
+}
+
+.footer a {
+    color: #fff;
+}
+
+#copy {
+    background-color: rgb(229, 227, 231);
+    margin: 0;
+}
